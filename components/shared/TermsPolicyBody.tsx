@@ -1,11 +1,11 @@
-import { TermsDataType } from '@/app/terms/page'
+// import { TermsDataType } from '@/app/terms/page'
 import { FC } from 'react'
 import ReactMarkdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
 import RevealWrapper from '../animation/RevealWrapper'
 
 interface PropsTypes {
-  termsData: TermsDataType[]
+  termsData: any[]
   heading?: boolean
 }
 const TermsPolicyBody: FC<PropsTypes> = ({ termsData, heading = false }) => {

@@ -1,5 +1,5 @@
 'use client'
-import { BlogType } from '@/app/ai-blog/page'
+// import { BlogType } from '@/app/ai-blog/page'
 import Link from 'next/link'
 import { FC } from 'react'
 import 'swiper/css'
@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import RevealWrapper from '../animation/RevealWrapper'
 
 interface BlogPostV7Props {
-  posts: BlogType[]
+  posts: any[]
 }
 
 const BlogPostV7: FC<BlogPostV7Props> = ({ posts }) => {

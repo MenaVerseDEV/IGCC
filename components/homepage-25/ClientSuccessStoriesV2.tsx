@@ -1,5 +1,5 @@
 'use client'
-import { BlogType } from '@/app/ai-blog/page'
+// import { BlogType } from '@/app/ai-blog/page'
 import RevealWrapper from '@/components/animation/RevealWrapper'
 import Link from 'next/link'
 import { FC } from 'react'
@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
 interface ClientSuccessStoriesV2Props {
-  blog: BlogType[]
+  blog: any[]
 }
 
 const ClientSuccessStoriesV2: FC<ClientSuccessStoriesV2Props> = ({ blog }) => {

@@ -1,5 +1,5 @@
 'use client'
-import { BlogType } from '@/app/ai-blog/page'
+// import { BlogType } from '@/app/ai-blog/page'
 import topArrowDark from '@/public/images/icons/top-arrow-dark.svg'
 import topArrow from '@/public/images/icons/top-arrow.svg'
 import Image from 'next/image'
@@ -9,7 +9,7 @@ import RevealWrapper from '../animation/RevealWrapper'
 import Pagination from './Pagination'
 
 interface BlogsProps {
-  Blogs: BlogType[]
+  Blogs: any[]
 }
 
 const BlogPostV5: FC<BlogsProps> = ({ Blogs }) => {
