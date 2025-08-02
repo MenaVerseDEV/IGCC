@@ -15,11 +15,11 @@ const FooterV2 = () => {
         <div className="delay-1500 absolute -bottom-24 left-1/2 z-20 h-56 w-56 -translate-x-1/2 transform animate-pulse rounded-full bg-gradient-to-t from-purple-500/20 to-primary/30 blur-2xl"></div>
       </div>
 
-      <div className="relative z-10 bg-backgroundBody pb-5">
-        <h5 className="footer-text-v2 w-full text-nowrap text-center font-satoshi text-[100px] font-medium uppercase leading-[100%] sm:text-[160px] md:text-[200px] lg:text-[250px] xl:text-[300px] 2xl:text-[350px]">
+      {/*   <div className="relative z-10 bg-backgroundBody pb-5">
+         <h5 className="footer-text-v2 w-full text-nowrap text-center font-satoshi text-[100px] font-medium uppercase leading-[100%] sm:text-[160px] md:text-[200px] lg:text-[250px] xl:text-[300px] 2xl:text-[350px]">
           IGCC
         </h5>
-      </div>
+      </div> */}
 
       <div className="relative z-10 -mt-10 bg-backgroundBody py-4 dark:bg-dark sm:-mt-[70px] md:-mt-24 xl:-mt-28">
         <div className="container">
