@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Important Link",
+    "links": [
+      {
+        "href": "/",
+        "label": "Home Page"
+      },
+      {
+        "href": "/gallery",
+        "label": "Gallery"
+      },
+      {
+        "href": "/message",
+        "label": "Message",
+        "soon": true
+      },
+      {
+        "href": "/agenda",
+        "label": "Agenda",
+        "soon": true
+      },
+      {
+        "href": "/speakers",
+        "label": "Speakers",
+        "soon": true
+      },
+      {
+        "href": "/sponsors",
+        "label": "Sponsors",
+        "soon": true
+      }
+    ]
+  }
+]
