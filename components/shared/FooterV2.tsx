@@ -21,7 +21,7 @@ const FooterV2 = () => {
         </h5>
       </div> */}
 
-      <div className="relative z-10 -mt-10 bg-backgroundBody py-4 dark:bg-dark sm:-mt-[70px] md:-mt-24 xl:-mt-28">
+      <div className="relative z-10 bg-backgroundBody py-4 dark:bg-dark">
         <div className="container">
           <div className="relative z-10 flex flex-col flex-wrap justify-center gap-y-10 pt-10 sm:flex-row sm:justify-between sm:gap-y-16 md:pt-20">
             {/* About Conference Section */}

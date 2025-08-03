@@ -5,12 +5,13 @@ const HeroV14 = () => {
   return (
     <section className="relative h-[80vh] w-screen overflow-hidden lg:h-screen">
       <video
-        preload="none"
+        preload=""
         className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
         autoPlay
         muted
         loop
-        playsInline>
+        playsInline
+        poster="/video/poster.jpg">
         <source src="/video/igbb.mp4" type="video/mp4" />
         <track src="subtitles/lawyer-hero-video-en.vtt" kind="subtitles" srcLang="en" label="English" />
         <track
@@ -42,9 +43,9 @@ const HeroV14 = () => {
         {/* Primary CTA Button */}
         <ul className="mt-7 flex list-none justify-center md:justify-start lg:mt-14">
           <li className="block w-full text-center md:inline-block md:w-auto">
-            <Link href="/registration" className="rv-button rv-button-primary block !text-white md:inline-block">
-              <div className="rv-button-top">
-                <span>Register Now</span>
+            <Link href="/registration" className="rv-button rv-button-primary block md:inline-block">
+              <div className="rv-button-top !text-white">
+                <span className="!text-white">Register Now</span>
               </div>
               <div className="rv-button-bottom">
                 <span className="text-nowrap">Register Now</span>

@@ -53,7 +53,7 @@ const GallerySection = () => {
         <li className="m-auto block w-full text-center md:inline-block md:w-auto">
           <Link href="/gallery" className="rv-button rv-button-primary block md:inline-block">
             <div className="rv-button-top">
-              <span>Show More</span>
+              <span className="!text-white">Show More</span>
             </div>
             <div className="rv-button-bottom">
               <span className="text-nowrap">Show More</span>
