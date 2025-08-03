@@ -1,7 +1,9 @@
 'use client'
 
 import footerData from '@/data/footer.json'
+import Image from 'next/image'
 import Link from 'next/link'
+import logo from '@/public/logo.png'
 
 const FooterV2 = () => {
   return (
@@ -21,12 +23,22 @@ const FooterV2 = () => {
         </h5>
       </div> */}
 
-      <div className="relative z-10 bg-backgroundBody py-4 dark:bg-dark">
+      <div className="relative z-10 border-t bg-primary/20 py-4 dark:bg-dark">
         <div className="container">
           <div className="relative z-10 flex flex-col flex-wrap justify-center gap-y-10 pt-10 sm:flex-row sm:justify-between sm:gap-y-16 md:pt-20">
             {/* About Conference Section */}
             <div className="pr-8 max-lg:basis-full">
-              <p className="mb-5 max-w-[360px]">
+              <Link href="/" className="relative z-10 py-3">
+                <Image
+                  className="inline-block max-h-[60px] w-auto"
+                  src={logo}
+                  alt="logo"
+                  width={136}
+                  height={68}
+                  priority
+                />
+              </Link>
+              <p className="mb-5 md:max-w-[360px]">
                 We are honored to welcome you to the International Genitourinary Cancer Congress (IGCC), where top
                 global experts share advancements in GU oncology.
               </p>

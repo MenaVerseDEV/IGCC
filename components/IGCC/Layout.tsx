@@ -10,7 +10,7 @@ const Layout = ({
   return (
     <Fragment>
       <Navbar />
-      <main className="relative z-10 overflow-hidden">{children}</main>
+      <main className="relative z-10 overflow-hidden bg-primary/20">{children}</main>
 
       <FooterV2 />
     </Fragment>

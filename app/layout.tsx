@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'IGCC 2025',
     images: [
       {
-        url: '/images/logo.png', // لو الشعار في مسار مختلف حدّث الرابط
+        url: '/images/logo.png',
         width: 800,
         height: 1000,
         alt: 'IGCC 2025 Logo',

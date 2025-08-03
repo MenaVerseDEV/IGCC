@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import RevealWrapper from '../animation/RevealWrapper'
+import StartsIn from '../IGCC/StartsIn'
 
 const HeroV14 = () => {
   return (
@@ -41,7 +42,7 @@ const HeroV14 = () => {
         <p className="mt-2 text-sm text-backgroundBody/70 md:text-base">20–22 November 2025 — Jeddah, KSA</p>
 
         {/* Primary CTA Button */}
-        <ul className="mt-7 flex list-none justify-center md:justify-start lg:mt-14">
+        {/* <ul className="mt-7 flex list-none justify-center md:justify-start lg:mt-14">
           <li className="block w-full text-center md:inline-block md:w-auto">
             <Link href="/registration" className="rv-button rv-button-primary block md:inline-block">
               <div className="rv-button-top !text-white">
@@ -52,7 +53,8 @@ const HeroV14 = () => {
               </div>
             </Link>
           </li>
-        </ul>
+        </ul> */}
+        <StartsIn />
       </RevealWrapper>
     </section>
   )
