@@ -42,14 +42,14 @@ function StartsIn() {
   }
 
   return (
-    <div className="mt-5 flex items-center gap-4 text-sm sm:gap-5">
+    <div className="mx-auto mt-5 flex items-center justify-center gap-2.5 text-sm sm:justify-start sm:gap-3">
       {[
         { title: 'days', value: timeLeft.days },
         { title: 'hours', value: timeLeft.hours },
         { title: 'minutes', value: timeLeft.minutes },
         { title: 'seconds', value: timeLeft.seconds },
       ].map(({ title, value }) => (
-        <div key={title} className="group flex flex-col items-center gap-1">
+        <div key={title} className="group flex min-w-12 flex-col items-center gap-1">
           <span className="text-xs uppercase text-white/80">{title}</span>
           <div className="relative overflow-hidden rounded bg-primary/50 px-3 py-1 text-lg font-bold tracking-wide text-white transition-colors duration-300 group-hover:bg-primary/70">
             <AnimatePresence mode="wait">

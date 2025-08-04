@@ -4,7 +4,7 @@ import StartsIn from '../IGCC/StartsIn'
 
 const HeroV14 = () => {
   return (
-    <section className="relative h-[80vh] w-screen overflow-hidden lg:h-screen">
+    <section className="relative h-screen w-screen overflow-hidden">
       <video
         preload=""
         className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
@@ -25,21 +25,21 @@ const HeroV14 = () => {
       </video>
 
       {/* overlay    */}
-      <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-gradient-to-r from-black/60 to-black/50"></div>
-      <RevealWrapper className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center md:left-1/3 md:top-2/3 md:-translate-x-1/3 md:-translate-y-2/3 md:text-left lg:top-1/2 lg:-translate-y-1/2">
-        <h1 className="mb-3 text-backgroundBody max-md:leading-none">
+      <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-gradient-to-r from-black/70 to-black/70 md:to-black/60"></div>
+      <section className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center md:left-1/3 md:top-2/3 md:-translate-x-1/3 md:-translate-y-2/3 md:text-left lg:top-1/2 lg:-translate-y-1/2">
+        <h1 className="} mb-3 text-backgroundBody md:leading-none">
           5<sup className="text-backgroundBody">th</sup> International
-          <br className="hidden md:block" />
-          Genitourinary Cancer
-          <br className="hidden md:block" />
+          <br className="block" />
+          Genitourinary Cancer <br className="hidden md:block" />
           <i className="font-instrument text-inherit">Conference 2025</i>
         </h1>
 
-        <p className="mx-auto max-w-3xl text-backgroundBody/80 md:mx-0">
+        <p className="mx-auto max-w-2xl text-lg text-backgroundBody/80 md:mx-0">
           A global event in urologic oncology, gathering top experts and clinicians.
         </p>
 
         <p className="mt-2 text-sm text-backgroundBody/70 md:text-base">20–22 November 2025 — Jeddah, KSA</p>
+        <StartsIn />
 
         {/* Primary CTA Button */}
         {/* <ul className="mt-7 flex list-none justify-center md:justify-start lg:mt-14">
@@ -54,8 +54,7 @@ const HeroV14 = () => {
             </Link>
           </li>
         </ul> */}
-        <StartsIn />
-      </RevealWrapper>
+      </section>
     </section>
   )
 }
