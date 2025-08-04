@@ -72,7 +72,7 @@ const ServicesV13 = () => {
           </div>
           <div className="flex-1 max-md:w-full">
             <TextAppearAnimation>
-              <p className="text-appear max-w-lg max-md:text-justify md:place-self-end md:text-right">
+              <p className="text-appear max-w-lg !text-center md:place-self-end md:text-right">
                 Discover our distinguished lineup of world-renowned professionals sharing insights on genitourinary
                 cancers and breakthroughs in oncology.
               </p>

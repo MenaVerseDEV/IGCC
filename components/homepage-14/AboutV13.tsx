@@ -5,7 +5,7 @@ import HeroGradientAnimationV2 from '../shared/HeroGradientAnimationV2'
 
 const AboutV13 = () => {
   return (
-    <section className="relative pb-14 pt-28 md:pb-16 md:pt-32 lg:pb-[88px] lg:pt-44 xl:pb-[100px] xl:pt-[200px]">
+    <section className="relative pb-14 pt-28 md:pb-16 md:pt-32 lg:pb-[88px] lg:pt-44">
       <HeroGradientAnimationV2 />
       <div className="container">
         <div className="text-center">

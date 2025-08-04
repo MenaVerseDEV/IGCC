@@ -6,7 +6,7 @@ export default function middleware(request: NextRequest) {
   // List of allowed paths
   const allowedPaths = ['/', '/gallery']
   // List of Start with paths
-  const startWithPaths = ['/speakers']
+  const startWithPaths = ['']
 
   // If it's in allowed paths, allow it
   if (allowedPaths.includes(pathname)) {
