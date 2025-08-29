@@ -3,6 +3,7 @@ import { satoshi } from '@/utils/fonts'
 import type { Metadata } from 'next'
 import { ReactNode, Suspense } from 'react'
 import '../scss/main.scss'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'International Genitourinary Cancers Conference 2025 | IGCC 2025',
@@ -55,7 +56,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} antialiased`}>
-        <Suspense fallback={<div className="h-screen w-screen">Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className="flex h-screen w-screen items-center justify-center">
+              <Image src="/images/logo.png" width={100} height={100} alt="IGCC 2025 Logo" />
+            </div>
+          }>
           <SmoothScrollProvider>{children}</SmoothScrollProvider>
         </Suspense>
       </body>
