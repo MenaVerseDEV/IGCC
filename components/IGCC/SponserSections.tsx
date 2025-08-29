@@ -64,7 +64,7 @@ export const SponserCard = ({ tiitle, Sponsers }: { tiitle: string; Sponsers: an
             target="_blank"
             className="group flex items-center justify-center rounded-md border bg-white p-4">
             <Image
-              src={`/images/sponsors/bayer.png`}
+              src={sponsor.logo}
               alt={sponsor.name}
               width={200}
               height={100}
