@@ -1,14 +1,16 @@
+import Novartis from '@/public/images/sponsors/novartis.png'
+import Astellas from '../public/images/sponsors/astellas.png'
 export const SPONSORS = [
   // Platinum Sponsors
   {
     name: 'Novartis',
-    logo: '/images/sponsors/novartis.png',
+    logo: Novartis,
     category: 'Platinum',
     link: 'https://www.novartis.com',
   },
   {
     name: 'Astellas',
-    logo: '/images/sponsors/astellas.png',
+    logo: Astellas,
     category: 'Platinum',
     link: 'https://www.astellas.com',
   },
