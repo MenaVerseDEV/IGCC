@@ -7,6 +7,8 @@ import WhyAttendConference from '@/components/IGCC/WhyAttendConference'
 import Image from 'next/image'
 import bgIcon from '@/public/nephrology.png'
 import kidneyBgIcon from '@/public/kidney.png'
+import Mentors from '@/components/homepage-14/Mentorers'
+import SponserSections from '@/components/IGCC/SponserSections'
 const homepage22 = () => {
   return (
     <Layout>
@@ -14,6 +16,8 @@ const homepage22 = () => {
       <AboutV13 />
       <WhyAttendConference />
       <ServicesV13 />
+      <SponserSections />
+      <Mentors />
       <GalarySection />
 
       <Image

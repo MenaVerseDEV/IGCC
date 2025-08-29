@@ -13,8 +13,8 @@ import { gsap } from 'gsap'
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Gallery', href: '/gallery' },
-  { soon: true, name: 'Register', href: 'http://reg2025.ibcc-jed.org/' },
-  { soon: true, name: 'Message', href: '/message' },
+  { soon: true, name: 'Register', href: '' },
+  { name: 'Message', href: '/message' },
   {
     soon: true,
     name: 'Agenda',
@@ -26,8 +26,9 @@ const navItems = [
       { name: 'Workshops', href: '/agenda/workshops' },
     ],
   },
-  { soon: true, name: 'Speakers', href: '/speakers' },
-  { soon: true, name: 'Sponsors', href: '/sponsors' },
+  { name: 'Speakers', href: '/speakers' },
+  { name: 'Mentors', href: '/mentors' },
+  { name: 'Sponsors', href: '/sponsors' },
 ]
 
 export default function Navbar() {

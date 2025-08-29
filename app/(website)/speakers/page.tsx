@@ -1,46 +1,41 @@
-import TeamV4 from '@/components/homepage-05/TeamV4'
+import { SpeakerCard } from '@/components/homepage-14/ServicesV13'
+import GalleryHeroSection from '@/components/IGCC/HeroSection'
 import Layout from '@/components/IGCC/Layout'
-import PageHeader from '@/components/IGCC/PageHeader'
+import { SPEAKERS } from '@/constants/SPEAKERS'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'IBCC 2025 Speakers | Meet the Experts',
+  title: 'IGCC Expert Speakers | International Genitourinary Cancers Conference',
   description:
-    'Meet the esteemed speakers of IBCC 2025 — top breast cancer experts, clinicians, and healthcare leaders gathering in Jeddah, Saudi Arabia to share their knowledge and latest research.',
+    'Meet the distinguished lineup of expert speakers at the International Genitourinary Cancers Conference (IGCC) 2025. Renowned professionals from around the world sharing insights on cancer research, treatment, and innovations.',
   keywords: [
-    'IBCC 2025 Speakers',
-    'Breast Cancer Conference 2025',
-    'Oncology Experts',
-    'Medical Conference Jeddah',
-    'Cancer Survivorship Summit',
-    'Breast Cancer Saudi Arabia',
-    'Saudi Oncology Society',
+    'IGCC Speakers',
+    'Oncology Expert Speakers',
+    'Genitourinary Cancers Conference',
+    'IGCC 2025 Speakers',
+    'Medical Oncology Conference',
+    'Cancer Research Experts',
+    'Jeddah Medical Conference',
   ],
-  openGraph: {
-    title: 'IBCC 2025 Speakers | Meet the Experts',
-    description:
-      'Discover the lineup of top international speakers and medical leaders at IBCC 2025 in Jeddah, Saudi Arabia.',
-  },
 }
+
 type Props = {}
 
-const SpeakersPage = (props: Props) => {
+const GalleryPage = (props: Props) => {
   return (
     <Layout>
-      <PageHeader
-        title="IBCC Speakers"
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Speakers' }]}
-        subtitle="Meet the esteemed speakers of the IBCC conference — thought leaders and experts in the fight against breast cancer."
-        variant="gradient"
-        size="lg"
-        showBackgroundPattern={true}
+      <GalleryHeroSection
+        title="Meet the"
+        subTitle="Expert Speakers"
+        description="Discover our distinguished lineup of world-renowned professionals sharing insights on genitourinary cancers and breakthroughs in oncology."
       />
-
-      <section className="py-16">
-        <TeamV4 />
+      <section className="container mx-auto mb-8 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3">
+        {SPEAKERS.map((speaker, index) => (
+          <SpeakerCard key={index} speaker={speaker} />
+        ))}
       </section>
     </Layout>
   )
 }
 
-export default SpeakersPage
+export default GalleryPage

@@ -11,10 +11,10 @@ import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 import TextAppearAnimation02 from '../animation/TextAppearAnimation02'
 import Image from 'next/image'
-import { SPEAKERS } from '@/constants/SPEAKERS'
 import { cn } from '@/utils/cn'
+import { MODERATORS } from '@/constants/MODERATORS'
 
-const ServicesV13 = () => {
+const Mentors = () => {
   return (
     <section className="relative overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container">
@@ -23,26 +23,26 @@ const ServicesV13 = () => {
             <TextAppearAnimation02>
               <h2>
                 Meet the <br />
-                <span className="font-instrument italic">Expert Speakers</span>
+                <span className="font-instrument italic">Expert Mentors</span>
               </h2>
             </TextAppearAnimation02>
           </div>
           <div className="flex-1 max-md:w-full">
             <TextAppearAnimation>
               <p className="text-appear max-w-lg !text-center md:place-self-end md:text-right">
-                Discover our distinguished lineup of world-renowned professionals sharing insights on genitourinary
-                cancers and breakthroughs in oncology.
+                Learn from our experienced mentors who bring valuable expertise, guidance, and inspiration to help shape
+                the future of oncology and medical research.
               </p>
             </TextAppearAnimation>
 
             <RevealWrapper as="ul" className="reveal-me mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-                <Link href="/speakers" className="rv-button rv-button-white block md:inline-block">
+                <Link href="/mentors" className="rv-button rv-button-white block md:inline-block">
                   <div className="rv-button-top">
-                    <span>View All Speakers</span>
+                    <span>View All Mentors</span>
                   </div>
                   <div className="rv-button-bottom">
-                    <span>View All Speakers</span>
+                    <span>View All Mentors</span>
                   </div>
                 </Link>
               </li>
@@ -76,10 +76,10 @@ const ServicesV13 = () => {
               spaceBetween: 30,
             },
           }}>
-          {SPEAKERS.map((speaker, index) => (
+          {MODERATORS.map((mentor, index) => (
             <SwiperSlide key={index}>
               <div className="swiper-slide w-full">
-                <SpeakerCard maxHeight="h-[500px]" speaker={speaker} />
+                <MentorCard mentor={mentor} />
               </div>
             </SwiperSlide>
           ))}
@@ -123,31 +123,47 @@ const ServicesV13 = () => {
   )
 }
 
-export default ServicesV13
+export default Mentors
 
-export const SpeakerCard = ({ speaker, maxHeight = 'h-[460px]' }: { speaker: any; maxHeight?: string }) => {
+export const MentorCard = ({
+  mentor,
+}: {
+  mentor: {
+    image?: string
+    name: string
+    role: string
+  }
+}) => {
   return (
-    <RevealWrapper className={cn('group relative overflow-hidden rounded-md border dark:border-dark', maxHeight)}>
+    <RevealWrapper className={cn('group relative h-[420px] overflow-hidden rounded-md border dark:border-dark')}>
       {/* Speaker Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          width={1080}
-          height={1080}
-          src={speaker.image}
-          alt={speaker.name}
-          className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-        />
+        {mentor.image && (
+          <Image
+            width={1080}
+            height={1080}
+            src={mentor.image}
+            alt={mentor.name}
+            className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+          />
+        )}
       </div>
 
-      {/* Overlay (on hover) */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-secondary/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:bg-secondary">
-        {/* Speaker Name */}
-        <h5 className="mb-2 text-center text-2xl font-bold text-white">{speaker.name}</h5>
+      {/* Default overlay showing only name at bottom */}
+      {mentor.image && (
+        <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-primary/80 via-primary/50 to-primary/0 p-4 transition-opacity duration-500 group-hover:opacity-0">
+          <h5 className="text-center text-xl font-bold text-white">{mentor.name}</h5>
+        </div>
+      )}
 
-        {/* Speaker Flag */}
-        {speaker.flag && (
-          <Image src={speaker.flag} alt={`${speaker.name} flag`} width={56} height={56} className="rounded shadow-md" />
-        )}
+      {/* Hover overlay showing name and role in center */}
+      <div
+        className={cn(
+          'absolute inset-0 z-20 flex flex-col items-center justify-center bg-primary/80 transition-all duration-500 dark:bg-primary',
+          mentor.image ? 'opacity-0 group-hover:opacity-100' : 'opacity-100',
+        )}>
+        <h5 className="mb-2 text-center text-2xl font-bold text-white">{mentor.name}</h5>
+        <p className="px-2 text-center text-xl text-white">{mentor.role}</p>
       </div>
     </RevealWrapper>
   )

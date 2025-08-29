@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     title: 'IGCC Photo Gallery | International Genitourinary Cancers Conference',
     description:
       'Dive into our gallery and relive the most inspiring moments from previous IGCC conferences — featuring world-class experts and cutting-edge cancer discussions.',
-    url: 'https://www.igcc-jed.org/gallery',
     siteName: 'IGCC 2025',
     images: [
       {
@@ -38,9 +37,6 @@ export const metadata: Metadata = {
     description:
       'Step into the IGCC gallery and relive the most iconic moments from previous genitourinary cancer summits in Jeddah.',
     images: ['/images/gallary/1.jpg'],
-  },
-  icons: {
-    icon: '/favicon.ico',
   },
 }
 type Props = {}

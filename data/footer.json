@@ -12,8 +12,7 @@
       },
       {
         "href": "/message",
-        "label": "Message",
-        "soon": true
+        "label": "Message"
       },
       {
         "href": "/agenda",
@@ -22,13 +21,15 @@
       },
       {
         "href": "/speakers",
-        "label": "Speakers",
-        "soon": true
+        "label": "Speakers"
+      },
+      {
+        "href": "/mentors",
+        "label": "Mentors"
       },
       {
         "href": "/sponsors",
-        "label": "Sponsors",
-        "soon": true
+        "label": "Sponsors"
       }
     ]
   }

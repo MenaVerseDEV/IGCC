@@ -35,7 +35,7 @@ const AboutV13 = () => {
           {/* Optional CTA */}
           <RevealWrapper as="ul" className="mt-7 justify-self-center max-md:w-full md:mt-14">
             <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-              <Link href="/about" className="rv-button rv-button-white block md:inline-block">
+              <Link href="/message" className="rv-button rv-button-white block md:inline-block">
                 <div className="rv-button-top">
                   <span>Read More</span>
                 </div>

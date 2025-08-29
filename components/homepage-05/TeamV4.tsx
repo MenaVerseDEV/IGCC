@@ -2,8 +2,7 @@
 import Image from 'next/image'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
-import { SpeakersData } from '@/constants'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 type Speakers = {
   id: number
@@ -35,7 +34,7 @@ const TeamV4 = () => {
         <RevealWrapper
           as="div"
           className="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {SpeakersData?.map((item: Speakers) => (
+          {/* {SpeakersData?.map((item: Speakers) => (
             <Link href={`/speakers/${item.id}`} key={item.id} className="group w-full">
               <figure className="relative aspect-square min-h-[270px] w-full overflow-hidden rounded-lg">
                 <Image
@@ -45,7 +44,6 @@ const TeamV4 = () => {
                   alt={item.name}
                   className="h-full w-full object-cover transition-all duration-500 group-hover:rotate-1 group-hover:scale-105"
                 />
-                {/* Hover overlay with gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primaryDark via-primary/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <div className="flex items-center gap-3">
@@ -63,6 +61,7 @@ const TeamV4 = () => {
               </figure>
             </Link>
           ))}
+           */}
         </RevealWrapper>
       </div>
     </section>
