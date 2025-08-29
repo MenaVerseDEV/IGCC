@@ -31,10 +31,10 @@ const GallerySection = () => {
       <RevealWrapper>
         <Marquee speed={60} pauseOnHover gradient={false}>
           <div className="flex items-center gap-6 px-4">
-            {gallaryImages.map((img, index) => (
+            {gallaryImages.slice(0, 10).map((img, index) => (
               <div
                 key={index}
-                className="group relative min-w-80 overflow-hidden rounded-xl shadow-md transition-shadow duration-500 hover:shadow-xl">
+                className="group relative min-w-80 max-w-96 overflow-hidden rounded-xl shadow-md transition-shadow duration-500 hover:shadow-xl">
                 <Image
                   width={300}
                   height={200}
