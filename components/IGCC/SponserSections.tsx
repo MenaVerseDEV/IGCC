@@ -25,8 +25,10 @@ const SponserSections = ({ isPlatium = false }: { isPlatium?: boolean }) => {
               {/* text */}
               <div className="flex flex-col items-center">
                 <div className="">
-                  <span className="text-md font-bold text-white">Supporting advancements in healthcare</span>
-                  <h2 className="text-6xl font-[800] text-white">{sponsor.sponserCategory.title}</h2>
+                  <span className="text-md hidden font-bold text-white md:block">
+                    Supporting advancements in healthcare
+                  </span>
+                  <h2 className="text-4xl font-[800] text-white md:text-6xl">{sponsor.sponserCategory.title}</h2>
                 </div>
               </div>
             </div>
