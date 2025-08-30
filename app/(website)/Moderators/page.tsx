@@ -5,16 +5,16 @@ import { MODERATORS } from '@/constants/MODERATORS'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'IGCC Expert Mentors | International Genitourinary Cancers Conference',
+  title: 'IGCC Expert Moderators | International Genitourinary Cancers Conference',
   description:
-    'Meet the distinguished lineup of expert mentors at the International Genitourinary Cancers Conference (IGCC) 2025. Renowned professionals from around the world providing mentorship, guidance, and expertise in cancer research, treatment, and innovations.',
+    'Meet the distinguished lineup of expert Moderators at the International Genitourinary Cancers Conference (IGCC) 2025. Renowned professionals from around the world providing Moderatorship, guidance, and expertise in cancer research, treatment, and innovations.',
   keywords: [
-    'IGCC Mentors',
-    'Oncology Expert Mentors',
+    'IGCC Moderators',
+    'Oncology Expert Moderators',
     'Genitourinary Cancers Conference',
-    'IGCC 2025 Mentors',
+    'IGCC 2025 Moderators',
     'Medical Oncology Conference',
-    'Cancer Research Mentors',
+    'Cancer Research Moderators',
     'Jeddah Medical Conference',
   ],
 }
@@ -26,8 +26,8 @@ const GalleryPage = (props: Props) => {
     <Layout>
       <GalleryHeroSection
         title="Meet our"
-        subTitle="Expert Mentors"
-        description="Discover our distinguished mentors providing guidance, expertise, and inspiration on genitourinary cancers and breakthroughs in oncology."
+        subTitle="Expert Moderators"
+        description="Discover our distinguished Moderators providing guidance, expertise, and inspiration on genitourinary cancers and breakthroughs in oncology."
       />
       <section className="container mx-auto mb-8 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3">
         {MODERATORS.map((mentor, index) => (

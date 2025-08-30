@@ -125,7 +125,13 @@ const ServicesV13 = () => {
 
 export default ServicesV13
 
-export const SpeakerCard = ({ speaker, maxHeight = 'h-[460px]' }: { speaker: any; maxHeight?: string }) => {
+export const SpeakerCard = ({
+  speaker,
+  maxHeight = 'h-[420px] md:h-[460px]',
+}: {
+  speaker: any
+  maxHeight?: string
+}) => {
   return (
     <RevealWrapper className={cn('group relative overflow-hidden rounded-md border dark:border-dark', maxHeight)}>
       {/* Speaker Image */}
@@ -139,16 +145,28 @@ export const SpeakerCard = ({ speaker, maxHeight = 'h-[460px]' }: { speaker: any
         />
       </div>
 
-      {/* Overlay (on hover) */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-secondary/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100 dark:bg-secondary">
-        {/* Speaker Name */}
-        <h5 className="mb-2 text-center text-2xl font-bold text-white">{speaker.name}</h5>
+      {/* Flag - Top Right Corner (Always Visible) */}
+      {speaker.flag && (
+        <div className="absolute right-3 top-3 z-20 transition-transform duration-300 group-hover:scale-110">
+          <Image
+            src={speaker.flag}
+            alt={`${speaker.name} flag`}
+            width={56}
+            height={56}
+            className="rounded-md border-2 border-white/20 shadow-lg"
+          />
+        </div>
+      )}
 
-        {/* Speaker Flag */}
-        {speaker.flag && (
-          <Image src={speaker.flag} alt={`${speaker.name} flag`} width={56} height={56} className="rounded shadow-md" />
-        )}
+      {/* Bottom Content - Name Always Visible */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 bg-gradient-to-t from-black/60 via-black/40 to-transparent p-4 backdrop-blur-sm transition-all duration-500 group-hover:from-black/70 group-hover:via-black/40">
+        <h5 className="text-center text-[16px] font-bold text-white transition-all duration-300 group-hover:mb-2 group-hover:text-[18px] md:text-[22px] md:group-hover:text-[24px]">
+          {speaker.name}
+        </h5>
       </div>
+
+      {/* Hover Overlay for Enhanced Interaction */}
+      <div className="z-5 absolute inset-0 bg-black/30 opacity-0 backdrop-blur-[1px] transition-opacity duration-300 group-hover:opacity-100" />
     </RevealWrapper>
   )
 }

@@ -47,8 +47,9 @@ const MessagePage = (props: Props) => {
   return (
     <Layout>
       <GalleryHeroSection
-        title="Message from the Chair"
+        title="Message from the Chairman"
         subTitle="Prof. Mubarak Al Mansour"
+        isNewLine
         description="Welcome note for the 5th International Genitourinary Cancer Conference (IGCC) 2025"
       />
 
@@ -71,7 +72,7 @@ const MessagePage = (props: Props) => {
 
                   <div className="space-y-2 text-white">
                     <h3 className="text-xl font-bold">Prof. Mubarak Al Mansour</h3>
-                    <ul className="text-md list-inside list-disc space-y-2 leading-relaxed text-blue-100">
+                    <ul className="text-md space-y-2 leading-relaxed text-blue-100">
                       <li className="">Chairman, International Genitourinary Cancer Conference</li>
                       <li>Consultant, King Abdulaziz Medical City</li>
                       <li>Ministry of National Guard Health Affairs, Jeddah</li>

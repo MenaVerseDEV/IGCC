@@ -14,7 +14,7 @@ import Image from 'next/image'
 import { cn } from '@/utils/cn'
 import { MODERATORS } from '@/constants/MODERATORS'
 
-const Mentors = () => {
+const Moderators = () => {
   return (
     <section className="relative overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container">
@@ -23,26 +23,26 @@ const Mentors = () => {
             <TextAppearAnimation02>
               <h2>
                 Meet the <br />
-                <span className="font-instrument italic">Expert Mentors</span>
+                <span className="font-instrument italic">Expert Moderators</span>
               </h2>
             </TextAppearAnimation02>
           </div>
           <div className="flex-1 max-md:w-full">
             <TextAppearAnimation>
               <p className="text-appear max-w-lg !text-center md:place-self-end md:text-right">
-                Learn from our experienced mentors who bring valuable expertise, guidance, and inspiration to help shape
-                the future of oncology and medical research.
+                Learn from our experienced Moderators who bring valuable expertise, guidance, and inspiration to help
+                shape the future of oncology and medical research.
               </p>
             </TextAppearAnimation>
 
             <RevealWrapper as="ul" className="reveal-me mt-5 justify-self-end max-md:w-full md:mt-10">
               <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-                <Link href="/mentors" className="rv-button rv-button-white block md:inline-block">
+                <Link href="/Moderators" className="rv-button rv-button-white block md:inline-block">
                   <div className="rv-button-top">
-                    <span>View All Mentors</span>
+                    <span>View All Moderators</span>
                   </div>
                   <div className="rv-button-bottom">
-                    <span>View All Mentors</span>
+                    <span>View All Moderators</span>
                   </div>
                 </Link>
               </li>
@@ -123,7 +123,7 @@ const Mentors = () => {
   )
 }
 
-export default Mentors
+export default Moderators
 
 export const MentorCard = ({
   mentor,

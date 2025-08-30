@@ -27,7 +27,7 @@ const navItems = [
     ],
   },
   { name: 'Speakers', href: '/speakers' },
-  { name: 'Mentors', href: '/mentors' },
+  { name: 'Moderators', href: '/Moderators' },
   { name: 'Sponsors', href: '/sponsors' },
 ]
 

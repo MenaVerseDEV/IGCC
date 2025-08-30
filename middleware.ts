@@ -4,7 +4,7 @@ export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   // List of allowed paths
-  const allowedPaths = ['/', '/gallery', '/message', '/speakers', '/sponsors', '/mentors']
+  const allowedPaths = ['/', '/gallery', '/message', '/speakers', '/sponsors', '/Moderators']
   // List of Start with paths
   const startWithPaths = ['']
 

@@ -34,7 +34,7 @@ const WhyAttendConference = () => {
     {
       title: 'Medical Fellows',
       description:
-        'Specialized training opportunities, mentorship programs, and career development in oncology subspecialties.',
+        'Specialized training opportunities, Moderatorship programs, and career development in oncology subspecialties.',
     },
     {
       title: 'Pathologists',

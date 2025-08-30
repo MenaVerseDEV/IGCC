@@ -16,7 +16,7 @@ const AboutV13 = () => {
 
           {/* Title */}
           <TextAppearAnimation>
-            <h2 className="text-appear mb-6">A Message from the Conference Chair</h2>
+            <h2 className="text-appear mb-6">A Message from the Conference Chairman</h2>
           </TextAppearAnimation>
 
           {/* Message */}

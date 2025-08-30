@@ -1,6 +1,7 @@
 import GalleryHeroSection from '@/components/IGCC/HeroSection'
 import Layout from '@/components/IGCC/Layout'
-import { SponserCard } from '@/components/IGCC/SponserSections'
+import SponserSections from '@/components/IGCC/SponserSections'
+// import { SponserCard } from '@/components/IGCC/SponserSections'
 import { SPONSORS } from '@/constants/SPONSORS'
 import { Metadata } from 'next'
 
@@ -22,11 +23,6 @@ export const metadata: Metadata = {
 type Props = {}
 
 const GalleryPage = (props: Props) => {
-  const platinumSponsors = SPONSORS.filter((s) => s.category === 'Platinum')
-  const goldSponsors = SPONSORS.filter((s) => s.category === 'Gold')
-  const silverSponsors = SPONSORS.filter((s) => s.category === 'Silver')
-  const bronzeSponsors = SPONSORS.filter((s) => s.category === 'Bronze')
-
   return (
     <Layout>
       <GalleryHeroSection
@@ -35,12 +31,7 @@ const GalleryPage = (props: Props) => {
         description="We are honored to be supported by leading organizations driving innovation, excellence, and progress in oncology and cancer care."
       />
 
-      <section className="container mx-auto">
-        {platinumSponsors.length > 0 && <SponserCard tiitle="Platinum Sponsors" Sponsers={platinumSponsors} />}
-        {goldSponsors.length > 0 && <SponserCard tiitle="Gold Sponsors" Sponsers={goldSponsors} />}
-        {silverSponsors.length > 0 && <SponserCard tiitle="Silver Sponsors" Sponsers={silverSponsors} />}
-        {bronzeSponsors.length > 0 && <SponserCard tiitle="Bronze Sponsors" Sponsers={bronzeSponsors} />}
-      </section>
+      <SponserSections />
     </Layout>
   )
 }

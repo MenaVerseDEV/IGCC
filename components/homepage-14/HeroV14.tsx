@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import RevealWrapper from '../animation/RevealWrapper'
 import StartsIn from '../IGCC/StartsIn'
 
 const HeroV14 = () => {
@@ -38,7 +36,9 @@ const HeroV14 = () => {
           A global event in urologic oncology, gathering top experts and clinicians.
         </p>
 
-        <p className="mt-2 text-sm text-backgroundBody/70 md:text-base">20–22 November 2025 — Jeddah, KSA</p>
+        <p className="mt-2 text-xl font-semibold text-backgroundBody/90">
+          20 - 22 November 2025 — Hilton hotel, Jeddah
+        </p>
         <StartsIn />
 
         {/* Primary CTA Button */}
