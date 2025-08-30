@@ -12,8 +12,7 @@ import { gsap } from 'gsap'
 
 const navItems = [
   { name: 'Home', href: '/' },
-  { name: 'Gallery', href: '/gallery' },
-  { soon: true, name: 'Register', href: '' },
+  { name: 'Register', href: 'https://reg2025.igcc-jeddah.com/' },
   { name: 'Message', href: '/message' },
   {
     soon: true,
@@ -29,6 +28,7 @@ const navItems = [
   { name: 'Speakers', href: '/speakers' },
   { name: 'Moderators', href: '/Moderators' },
   { name: 'Sponsors', href: '/sponsors' },
+  { name: 'Gallery', href: '/gallery' },
 ]
 
 export default function Navbar() {
