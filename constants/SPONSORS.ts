@@ -76,4 +76,21 @@ export const SPONSORS: SponsorsProps[] = [
       },
     ],
   },
+
+  {
+    sponserCategory: {
+      title: 'Bronze Sponsors',
+      subtitle: 'Leading innovation in healthcare',
+      image: '/images/sponsors/Bronze Sponsers.png',
+    },
+    cards: [
+      {
+        name: 'Eisai',
+        logo: '/images/sponsors/eisai.svg', // make sure you save the image with this name
+        link: 'https://www.eisai.com/',
+        description:
+          'Eisai is a global pharmaceutical company focused on human health care (hhc) and innovation in oncology, neurology, and rare diseases.',
+      },
+    ],
+  },
 ]
