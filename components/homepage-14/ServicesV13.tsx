@@ -3,7 +3,7 @@ import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Navigation } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Link from 'next/link'
@@ -54,7 +54,7 @@ const ServicesV13 = () => {
       <RevealWrapper className="reveal-me relative">
         <Swiper
           spaceBetween={30}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className="!pl-[20%]"
           navigation={{
             prevEl: '.swiper-prev-btn',
@@ -62,6 +62,10 @@ const ServicesV13 = () => {
           }}
           pagination={{ clickable: true }}
           slidesPerView={4}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             320: {
               slidesPerView: 1,

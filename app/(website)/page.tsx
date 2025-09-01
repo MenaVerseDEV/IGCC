@@ -16,7 +16,7 @@ const homepage22 = () => {
       <AboutV13 />
       <WhyAttendConference />
       <ServicesV13 />
-      <SponserSections isPlatium />
+      <SponserSections isHomePage />
       <Moderators />
       <GalarySection />
 

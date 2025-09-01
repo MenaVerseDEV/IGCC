@@ -4,6 +4,7 @@ import footerData from '@/data/footer.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/public/logo.png'
+import Lplogo from '@/public/LP Logo.png'
 
 const FooterV2 = () => {
   return (
@@ -16,12 +17,6 @@ const FooterV2 = () => {
         <div className="delay-3000 absolute -bottom-40 -right-40 z-20 h-80 w-80 animate-pulse rounded-full bg-gradient-to-tl from-primary/20 to-secondary/40 blur-3xl"></div>
         <div className="delay-1500 absolute -bottom-24 left-1/2 z-20 h-56 w-56 -translate-x-1/2 transform animate-pulse rounded-full bg-gradient-to-t from-purple-500/20 to-primary/30 blur-2xl"></div>
       </div>
-
-      {/*   <div className="relative z-10 bg-backgroundBody pb-5">
-         <h5 className="footer-text-v2 w-full text-nowrap text-center font-satoshi text-[100px] font-medium uppercase leading-[100%] sm:text-[160px] md:text-[200px] lg:text-[250px] xl:text-[300px] 2xl:text-[350px]">
-          IGCC
-        </h5>
-      </div> */}
 
       <div className="relative z-10 border-t bg-primary/20 py-4 dark:bg-dark">
         <div className="container">
@@ -80,14 +75,46 @@ const FooterV2 = () => {
                 loading="lazy"
                 allowFullScreen
                 style={{ border: 0 }}
+                title="Conference Venue Location"
               />
             </div>
           </div>
 
-          {/* حقوق النشر */}
-          <p className="mt-10 border-t pt-5 text-center text-sm text-gray-500 dark:border-dark dark:text-gray-400">
-            © {new Date().getFullYear()} IGCC. All rights reserved.
-          </p>
+          {/* Enhanced Organizing Company Section */}
+          <div className="mt-12 border-t pt-6">
+            <div className="mb-6 flex flex-col items-center justify-center gap-2 md:flex-row">
+              <Link
+                href="https://livepresentation.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transition-transform duration-300 hover:scale-105"
+                aria-label="Visit Live Presentation website">
+                <Image
+                  src={Lplogo}
+                  alt="Live Presentation - Event Organizing Company"
+                  width={150}
+                  height={75}
+                  className="max-h-[60px] w-auto transition-opacity duration-300 group-hover:opacity-80"
+                  priority
+                />
+              </Link>
+              <div className="text-center md:text-left">
+                <p className="mb-1 text-sm font-medium text-gray-700 dark:text-gray-300 md:text-base">
+                  Organized by Live Presentation
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  For inquiries, please contact:{' '}
+                  <Link
+                    href="https://livepresentation.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-primary transition-colors duration-300 hover:text-primary/80 hover:underline">
+                    livepresentation.net
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

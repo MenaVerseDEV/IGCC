@@ -3,7 +3,7 @@ import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Link from 'next/link'
@@ -54,11 +54,15 @@ const Moderators = () => {
       <RevealWrapper className="reveal-me relative">
         <Swiper
           spaceBetween={30}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           className="!pl-[20%]"
           navigation={{
             prevEl: '.swiper-prev-btn',
             nextEl: '.swiper-next-btn',
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
           slidesPerView={4}
