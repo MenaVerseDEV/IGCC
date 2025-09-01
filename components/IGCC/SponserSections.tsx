@@ -34,7 +34,7 @@ const SponserSections = ({ isHomePage = false }: { isHomePage?: boolean }) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="space-y-20">
+              className="my-10 space-y-20">
               <Fragment>
                 {/* title */}
                 <section className="flex h-[100px] w-full items-center justify-center bg-primary md:h-[160px]">
