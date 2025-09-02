@@ -7,8 +7,8 @@
         "label": "Home Page"
       },
       {
-        "href": "/gallery",
-        "label": "Gallery"
+        "label": "Register",
+        "href": "https://reg2025.igcc-jeddah.com/"
       },
       {
         "href": "/message",
@@ -30,6 +30,10 @@
       {
         "href": "/sponsors",
         "label": "Sponsors"
+      },
+      {
+        "href": "/gallery",
+        "label": "Gallery"
       }
     ]
   }

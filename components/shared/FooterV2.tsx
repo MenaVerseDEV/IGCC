@@ -69,7 +69,7 @@ const FooterV2 = () => {
               <h5 className="mb-4 text-2xl font-[500] leading-[1.1]">Conference Venue</h5>
               <p className="mb-3">Hilton Hotel, Jeddah, KSA</p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54271.53585475277!2d39.23919439315795!3d21.551771932813303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0051de8b687%3A0x7bf666234fa6229!2sThe%20Hotel%20Galleria%20Jeddah%2C%20Curio%20Collection%20by%20Hilton!5e1!3m2!1sar!2seg!4v1753959698140!5m2!1sar!2seg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3390.7289470810097!2d39.1093343!3d21.60483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dbd751aa2b57%3A0xd32f14ab8ce46662!2z2YfZitmE2KrZiNmGINis2K_YqQ!5e1!3m2!1sar!2seg!4v1756795420411!5m2!1sar!2seg"
                 width="300"
                 height="200"
                 loading="lazy"

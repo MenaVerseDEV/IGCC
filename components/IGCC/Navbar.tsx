@@ -320,7 +320,7 @@ export default function Navbar() {
                       className={`flex items-center gap-1 rounded-md px-3 py-1 text-lg font-[500] transition-colors duration-200 ${
                         pathname === item.href
                           ? 'bg-primary text-white'
-                          : 'text-gray-700 hover:bg-primary/60 hover:text-white'
+                          : 'bg-primary/30 text-white/70 hover:bg-primary/60 hover:text-white'
                       }`}>
                       {item.name}
                       {item.hasDropdown && (
