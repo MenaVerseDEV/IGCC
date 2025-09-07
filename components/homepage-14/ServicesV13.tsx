@@ -140,9 +140,9 @@ export const SpeakerCard = ({
     <RevealWrapper className={cn('group relative overflow-hidden rounded-md border dark:border-dark', maxHeight)}>
       {/* Speaker Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          width={1080}
-          height={1080}
+        <img
+          // width={1080}
+          // height={1080}
           src={speaker.image}
           alt={speaker.name}
           className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
