@@ -2,7 +2,7 @@ import Layout from '@/components/IGCC/Layout'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import GalleryHeroSection from '@/components/IGCC/HeroSection'
-import DirectorImage from '@/public/images/speakers/Prof. Mubarak Al Mansour.png'
+import DirectorImage from '@/public/images/speakers/Prof.MubarakAlMansour.png'
 
 type Props = {}
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'IGCC 2025',
     images: [
       {
-        url: '/images/speakers/Prof. Mubarak Al Mansour.png',
+        url: '/images/speakers/Prof.MubarakAlMansour.png',
         width: 1200,
         height: 630,
         alt: 'Prof. Mubarak Al Mansour - IGCC Chairman',
