@@ -49,7 +49,7 @@ export const SPONSORS: SponsorsProps[] = [
       },
       {
         name: 'Johnson & Johnson',
-        logo: '/images/sponsors/johnson-and-johnson.png',
+        logo: '/images/sponsors/johnson-and-johnson.jpg',
         link: 'https://www.jnj.com',
         description: 'Innovating across pharmaceuticals, medical devices, and consumer health.',
       },
