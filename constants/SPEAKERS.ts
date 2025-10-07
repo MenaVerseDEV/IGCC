@@ -30,9 +30,19 @@ export const SPEAKERS = [
     flag: '/images/flag/USA.png',
   },
   {
+    name: 'Prof. Syed Hussain',
+    image: '/images/speakers/Prof. Syed Hussain.jpg',
+    flag: '/images/flag/UK.png',
+  },
+  {
     name: 'Prof. Christian Kollmannsberger',
     image: '/images/speakers/Prof.ChristianKollmannsberger.jpg',
     flag: '/images/flag/Canada.png',
+  },
+  {
+    name: ' Prof. James Larkin',
+    image: '/images/speakers/Prof. James Larkin.jpg',
+    flag: '/images/flag/UK.png',
   },
   {
     name: 'Prof. Asif Muneer',
