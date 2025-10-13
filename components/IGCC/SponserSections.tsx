@@ -49,7 +49,7 @@ const SponserSections = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                         alt={sponsor.sponserCategory.title}
                         width={250}
                         height={350}
-                        className="max-h-[160px] w-auto max-w-[220px] object-cover md:max-h-[280px] md:min-h-[280px]"
+                        className="max-h-[160px] w-auto max-w-[220px] object-contain md:max-h-[280px] md:min-h-[280px]"
                       />
                     </motion.div>
                     {/* text */}
@@ -111,7 +111,7 @@ const SponserSections = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                     alt={sponsor.sponserCategory.title}
                     width={250}
                     height={350}
-                    className="max-h-[160px] w-auto max-w-[220px] object-cover md:max-h-[280px] md:min-h-[280px]"
+                    className="max-h-[160px] w-auto max-w-[220px] object-contain md:max-h-[280px] md:min-h-[280px]"
                   />
                   {/* text */}
                   <div className="flex flex-col items-center">

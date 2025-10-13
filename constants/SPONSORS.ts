@@ -36,6 +36,21 @@ export const SPONSORS: SponsorsProps[] = [
   },
   {
     sponserCategory: {
+      title: 'Diamond Sponsors',
+      subtitle: 'Committed to better care worldwide',
+      image: '/images/sponsors/Diamond Sponsers.png',
+    },
+    cards: [
+      {
+        name: 'MSD Oncology',
+        logo: '/images/sponsors/msd-oncology.png',
+        link: 'https://www.msd.com',
+        description: 'Committed to discovering breakthrough cancer therapies worldwide.',
+      },
+    ],
+  },
+  {
+    sponserCategory: {
       title: 'Gold Sponsors',
       subtitle: 'Committed to better care worldwide',
       image: '/images/sponsors/Golden Sponsers.png',
@@ -53,12 +68,6 @@ export const SPONSORS: SponsorsProps[] = [
         link: 'https://www.jnj.com',
         description: 'Innovating across pharmaceuticals, medical devices, and consumer health.',
       },
-      {
-        name: 'MSD Oncology',
-        logo: '/images/sponsors/msd-oncology.png',
-        link: 'https://www.msd.com',
-        description: 'Committed to discovering breakthrough cancer therapies worldwide.',
-      },
     ],
   },
   {
@@ -74,9 +83,29 @@ export const SPONSORS: SponsorsProps[] = [
         link: 'https://www.bayer.com',
         description: 'Science for a better life with focus on health and nutrition.',
       },
+      {
+        name: 'Bristol Myers Squibb',
+        logo: '/images/sponsors/bristol-myers-squibb.png',
+        link: 'https://www.bms.com/',
+        description:
+          'A global biopharmaceutical company dedicated to discovering, developing, and delivering innovative medicines for serious diseases.',
+      },
+      {
+        name: 'IPSEN',
+        logo: '/images/sponsors/ipsen.png',
+        link: 'https://www.ipsen.com/',
+        description:
+          'A global biopharmaceutical group focused on transformative medicines in oncology, neuroscience, and rare diseases.',
+      },
+      {
+        name: 'MERCK',
+        logo: '/images/sponsors/MERCK.jpg',
+        link: 'https://www.merckgroup.com/en',
+        description:
+          'A leading science and technology company driving innovation in healthcare, life science, and performance materials.',
+      },
     ],
   },
-
   {
     sponserCategory: {
       title: 'Bronze Sponsors',
@@ -86,10 +115,17 @@ export const SPONSORS: SponsorsProps[] = [
     cards: [
       {
         name: 'Eisai',
-        logo: '/images/sponsors/eisai.svg', // make sure you save the image with this name
+        logo: '/images/sponsors/eisai.svg',
         link: 'https://www.eisai.com/',
         description:
           'Eisai is a global pharmaceutical company focused on human health care (hhc) and innovation in oncology, neurology, and rare diseases.',
+      },
+      {
+        name: 'AMGEN',
+        logo: '/images/sponsors/AMGEN.jpg',
+        link: 'https://www.amgen.com/',
+        description:
+          'One of the world’s leading biotechnology companies pioneering human therapeutics that address serious illnesses and unmet medical needs.',
       },
     ],
   },
