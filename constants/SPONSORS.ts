@@ -90,13 +90,7 @@ export const SPONSORS: SponsorsProps[] = [
         description:
           'A global biopharmaceutical company dedicated to discovering, developing, and delivering innovative medicines for serious diseases.',
       },
-      {
-        name: 'IPSEN',
-        logo: '/images/sponsors/ipsen.png',
-        link: 'https://www.ipsen.com/',
-        description:
-          'A global biopharmaceutical group focused on transformative medicines in oncology, neuroscience, and rare diseases.',
-      },
+
       {
         name: 'MERCK',
         logo: '/images/sponsors/MERCK.jpg',
@@ -126,6 +120,13 @@ export const SPONSORS: SponsorsProps[] = [
         link: 'https://www.amgen.com/',
         description:
           'One of the world’s leading biotechnology companies pioneering human therapeutics that address serious illnesses and unmet medical needs.',
+      },
+      {
+        name: 'IPSEN',
+        logo: '/images/sponsors/ipsen.png',
+        link: 'https://www.ipsen.com/',
+        description:
+          'A global biopharmaceutical group focused on transformative medicines in oncology, neuroscience, and rare diseases.',
       },
     ],
   },
