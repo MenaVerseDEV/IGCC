@@ -25,7 +25,7 @@ export const SPEAKERS = [
     flag: '/images/flag/Germany.png',
   },
   {
-    name: 'Dr. Maha Hussain',
+    name: 'Prof. Maha Hussain',
     image: '/images/speakers/Dr.MahaHussain.jpg',
     flag: '/images/flag/USA.png',
   },
@@ -55,7 +55,7 @@ export const SPEAKERS = [
     flag: '/images/flag/Spain.png',
   },
   {
-    name: 'Dr. Camillo Porta',
+    name: 'Prof. Camillo Porta',
     image: '/images/speakers/Dr.CamilloPorta.jpg',
     flag: '/images/flag/Italy.png',
   },
@@ -63,6 +63,11 @@ export const SPEAKERS = [
     name: 'Prof. Thomas Powles',
     image: '/images/speakers/Prof.ThomasPowles.jpg',
     flag: '/images/flag/UK.png',
+  },
+  {
+    name: 'Prof. Alejo Rodriguez',
+    image: '/images/speakers/Prof. Alejo Rodriguez.png',
+    flag: '/images/flag/Spain.png',
   },
   {
     name: 'Prof. Cristina Suarez',
