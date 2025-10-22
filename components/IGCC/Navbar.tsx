@@ -14,7 +14,7 @@ const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Register', href: 'https://reg2025.igcc-jeddah.com/' },
   { name: 'Message', href: '/message' },
-  { name: 'Agenda', href: '/agenda' },
+  { name: 'Agenda', href: '/Poster_compressed.pdf', target: '_blank' },
   { name: 'Speakers', href: '/speakers' },
   { name: 'Moderators', href: '/Moderators' },
   { name: 'Sponsors', href: '/sponsors' },
@@ -349,6 +349,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between">
                 <Link
                   href={item.href}
+                  target={item.target || '_self'}
                   onClick={(e) => {
                     closeMobileMenu()
                   }}

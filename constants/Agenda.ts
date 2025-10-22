@@ -82,8 +82,9 @@ export const agendaData: DaySchedule[] = [
           },
           {
             time: '07:10 – 07:25 pm',
-            title: 'Satellite Symposium - Esai',
+            title: 'Satellite Symposium - Eisai',
             speaker: 'Dr. Fahad Almugbel',
+            speakerImage: '/images/sponsors/eisai.svg',
             type: 'sponser',
           },
           {
@@ -169,6 +170,7 @@ export const agendaData: DaySchedule[] = [
             time: '09:55 – 10:15 am',
             title: 'Satellite Symposium - MSD',
             type: 'sponser',
+            speakerImage: '/images/sponsors/msd-oncology.png',
           },
           {
             time: '10:15 – 10:30 am',
@@ -185,6 +187,7 @@ export const agendaData: DaySchedule[] = [
           {
             time: '10:45 – 11:00 am',
             title: 'Satellite Symposium - BMS',
+            speakerImage: '/images/sponsors/bristol-myers-squibb.jpg',
             type: 'sponser',
           },
           {
@@ -238,7 +241,7 @@ export const agendaData: DaySchedule[] = [
             time: '02:40 – 03:10 pm',
             title: 'Satellite Symposium – Astellas',
             speaker: 'Prof. Alejo Rodriguez',
-            speakerImage: '/images/speakers/Prof. Alejo Rodriguez.png',
+            speakerImage: '/images/sponsors/astellas.png',
             moderator: 'Dr Emad Tashkandi',
             type: 'sponser',
           },
@@ -267,6 +270,7 @@ export const agendaData: DaySchedule[] = [
           {
             time: '04:10 – 04:25 pm',
             title: 'Satellite Symposium - Merck',
+            speakerImage: '/images/sponsors/MERCK.jpg',
             type: 'sponser',
           },
           {
@@ -290,6 +294,7 @@ export const agendaData: DaySchedule[] = [
           {
             time: '05:10 – 05:25 pm',
             title: 'Satellite Symposium - Amgen',
+            speakerImage: '/images/sponsors/AMGEN.jpg',
             type: 'sponser',
           },
           {
@@ -343,7 +348,7 @@ export const agendaData: DaySchedule[] = [
             time: '09:25 – 09:45 am',
             title: 'Satellite Symposium – Bayer',
             speaker: 'Prof. Gerhardt Attard',
-            speakerImage: '/images/speakers/Prof.GerhardtAttard.jpg',
+            speakerImage: '/images/sponsors/bayer.png',
             type: 'sponser',
           },
           {
@@ -366,6 +371,7 @@ export const agendaData: DaySchedule[] = [
           {
             time: '10:30 – 11:00 am',
             title: 'Satellite Symposium - Novartis',
+            speakerImage: '/images/sponsors/novartis.png',
             type: 'sponser',
           },
           {
@@ -377,6 +383,7 @@ export const agendaData: DaySchedule[] = [
           {
             time: '11:15 – 11:35 am',
             title: 'Satellite Symposium - AstraZeneca',
+            speakerImage: '/images/sponsors/astrazeneca.png',
             type: 'sponser',
           },
           {
@@ -423,7 +430,7 @@ export const agendaData: DaySchedule[] = [
             title: 'Satellite Symposium – Johnson & Johnson',
             type: 'sponser',
             speaker: 'Prof. David Olmos',
-            speakerImage: '/images/speakers/Prof.DavidOlmos.jpg',
+            speakerImage: '/images/sponsors//johnson-and-johnson.jpg',
             moderator: 'Prof. Mohammed Aseafa',
           },
           {
