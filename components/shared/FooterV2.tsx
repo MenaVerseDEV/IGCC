@@ -44,20 +44,13 @@ const FooterV2 = () => {
               <div key={`Id_${index}`}>
                 <h5 className="mb-4 text-2xl font-[500] leading-[1.1]">{section.title}</h5>
                 <ul>
-                  {section.links.map(({ href, label, soon }) => (
+                  {section.links.map(({ href, label }) => (
                     <li key={href} className="md:mb-1">
-                      {soon ? (
-                        <span className="block cursor-not-allowed font-normal leading-9 tracking-[0.36px] text-gray-400 md:text-lg">
-                          {label}
-                          <span className="ml-2 text-sm text-gray-500">(Soon)</span>
-                        </span>
-                      ) : (
-                        <Link
-                          href={href}
-                          className="block font-normal leading-9 tracking-[0.36px] transition-colors duration-300 hover:text-primary md:text-lg">
-                          {label}
-                        </Link>
-                      )}
+                      <Link
+                        href={href}
+                        className="block font-normal leading-9 tracking-[0.36px] transition-colors duration-300 hover:text-primary md:text-lg">
+                        {label}
+                      </Link>
                     </li>
                   ))}
                 </ul>

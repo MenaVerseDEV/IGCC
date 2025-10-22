@@ -16,8 +16,7 @@
       },
       {
         "href": "/agenda",
-        "label": "Agenda",
-        "soon": true
+        "label": "Agenda"
       },
       {
         "href": "/speakers",

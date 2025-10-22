@@ -14,17 +14,7 @@ const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Register', href: 'https://reg2025.igcc-jeddah.com/' },
   { name: 'Message', href: '/message' },
-  {
-    soon: true,
-    name: 'Agenda',
-    href: '/agenda',
-    hasDropdown: true,
-    children: [
-      { name: 'Schedule', href: '/agenda/schedule' },
-      { name: 'Sessions', href: '/agenda/sessions' },
-      { name: 'Workshops', href: '/agenda/workshops' },
-    ],
-  },
+  { name: 'Agenda', href: '/agenda' },
   { name: 'Speakers', href: '/speakers' },
   { name: 'Moderators', href: '/Moderators' },
   { name: 'Sponsors', href: '/sponsors' },
@@ -289,71 +279,33 @@ export default function Navbar() {
                 <div
                   key={item.name}
                   className="relative"
-                  onMouseEnter={() => {
-                    if (item.hasDropdown && !item.soon) {
-                      handleDropdownEnter(item.name)
-                    }
-                    if (item.soon) {
-                      handleSoonItemHover(item.name, true)
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (item.hasDropdown && !item.soon) {
-                      handleDropdownLeave()
-                    }
-                    if (item.soon) {
-                      handleSoonItemHover(item.name, false)
-                    }
-                  }}>
-                  {item.soon ? (
-                    <span
-                      className={`flex cursor-not-allowed items-center gap-1 rounded-md px-3 py-1 text-lg font-[500] transition-colors duration-200 ${
-                        pathname === item.href ? 'bg-gray-400 text-gray-600' : 'text-gray-400 hover:text-gray-500'
-                      }`}>
-                      {item.name}
-                      {item.hasDropdown && <ChevronDown className="h-4 w-4 text-gray-400" />}
-                    </span>
-                  ) : (
-                    <Link
-                      href={item.hasDropdown ? '#' : item.href}
-                      onClick={(e) => handleDropdownClick(e, item)}
-                      className={`flex items-center gap-1 rounded-md px-3 py-1 text-lg font-[500] transition-colors duration-200 ${
-                        pathname === item.href
-                          ? 'bg-primary text-white'
-                          : 'bg-primary/30 text-white/70 hover:bg-primary/60 hover:text-white'
-                      }`}>
-                      {item.name}
-                      {item.hasDropdown && (
-                        <ChevronDown
-                          className={`h-4 w-4 transition-transform duration-200 ${
-                            openDropdown === item.name ? 'rotate-180' : ''
-                          }`}
-                        />
-                      )}
-                    </Link>
-                  )}
-
-                  {/* Soon Tooltip */}
-                  {item.soon && hoveredSoonItem === item.name && (
-                    <div className="absolute left-1/2 top-full z-50 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-black px-2 py-1 text-sm text-white shadow-lg">
-                      Soon
-                      <div className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-black"></div>
-                    </div>
-                  )}
-
-                  {/* Desktop Dropdown Menu */}
-                  {item.hasDropdown && item.children && openDropdown === item.name && !item.soon && (
-                    <div className="absolute left-0 top-full z-50 mt-1 w-48 rounded-md border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-gray-800">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
-                          {child.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                  // onMouseEnter={() => {
+                  //   if (item?.hasDropdown && !item.soon) {
+                  //     handleDropdownEnter(item.name)
+                  //   }
+                  //   if (item.soon) {
+                  //     handleSoonItemHover(item.name, true)
+                  //   }
+                  // }}
+                  // onMouseLeave={() => {
+                  //   if (item.hasDropdown && !item.soon) {
+                  //     handleDropdownLeave()
+                  //   }
+                  //   if (item.soon) {
+                  //     handleSoonItemHover(item.name, false)
+                  //   }
+                  // }}
+                >
+                  <Link
+                    href={item.href}
+                    onClick={(e) => handleDropdownClick(e, item)}
+                    className={`flex items-center gap-1 rounded-md px-3 py-1 text-lg font-[500] transition-colors duration-200 ${
+                      pathname === item.href
+                        ? 'bg-primary text-white'
+                        : 'bg-primary/30 text-white/70 hover:bg-primary/60 hover:text-white'
+                    }`}>
+                    {item.name}
+                  </Link>
                 </div>
               ))}
             </div>
@@ -395,58 +347,17 @@ export default function Navbar() {
           {navItems.map((item) => (
             <div key={item.name} className="text-white">
               <div className="flex items-center justify-between">
-                {item.soon ? (
-                  <span
-                    className={`flex-1 cursor-not-allowed text-2xl font-light ${
-                      pathname === item.href ? 'text-gray-500' : 'text-gray-400'
-                    }`}>
-                    {item.name}
-                    <span className="ml-2 text-sm text-gray-500">(Soon)</span>
-                  </span>
-                ) : (
-                  <Link
-                    href={item.hasDropdown ? '#' : item.href}
-                    onClick={(e) => {
-                      if (item.hasDropdown) {
-                        e.preventDefault()
-                        handleMobileDropdownClick(item.name)
-                      } else {
-                        closeMobileMenu()
-                      }
-                    }}
-                    className={`block flex-1 text-2xl font-light transition-colors duration-200 ${
-                      pathname === item.href ? 'text-primary' : 'text-white hover:text-gray-300'
-                    }`}>
-                    {item.name}
-                  </Link>
-                )}
-                {item.hasDropdown && !item.soon && (
-                  <button
-                    onClick={() => handleMobileDropdownClick(item.name)}
-                    className="p-2 text-white hover:text-gray-300">
-                    <ChevronDown
-                      className={`h-5 w-5 transition-transform duration-200 ${
-                        openMobileDropdown === item.name ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </button>
-                )}
+                <Link
+                  href={item.href}
+                  onClick={(e) => {
+                    closeMobileMenu()
+                  }}
+                  className={`block flex-1 text-2xl font-light transition-colors duration-200 ${
+                    pathname === item.href ? 'text-primary' : 'text-white hover:text-gray-300'
+                  }`}>
+                  {item.name}
+                </Link>
               </div>
-
-              {/* Mobile Dropdown */}
-              {item.hasDropdown && item.children && openMobileDropdown === item.name && !item.soon && (
-                <div className="mt-2 space-y-2 pl-6">
-                  {item.children.map((child) => (
-                    <Link
-                      key={child.name}
-                      href={child.href}
-                      onClick={closeMobileMenu}
-                      className="block text-lg text-gray-300 transition-colors duration-200 hover:text-white">
-                      {child.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </div>
