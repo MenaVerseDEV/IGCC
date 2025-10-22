@@ -21,22 +21,22 @@ export const SPONSORS: SponsorsProps[] = [
     },
     cards: [
       {
-        name: 'Novartis',
-        logo: '/images/sponsors/novartis.png',
-        link: 'https://www.novartis.com',
-        description: 'Global leader in innovative medicines and solutions.',
-      },
-      {
         name: 'Astellas',
         logo: '/images/sponsors/astellas.png',
         link: 'https://www.astellas.com',
         description: 'Advancing innovative science to improve patient lives.',
       },
+      {
+        name: 'Novartis',
+        logo: '/images/sponsors/novartis.png',
+        link: 'https://www.novartis.com',
+        description: 'Global leader in innovative medicines and solutions.',
+      },
     ],
   },
   {
     sponserCategory: {
-      title: 'Diamond Sponsors',
+      title: 'Diamond Sponsor',
       subtitle: 'Committed to better care worldwide',
       image: '/images/sponsors/Diamond Sponsers.png',
     },
@@ -78,19 +78,18 @@ export const SPONSORS: SponsorsProps[] = [
     },
     cards: [
       {
+        name: 'Bristol Myers Squibb',
+        logo: '/images/sponsors/bristol-myers-squibb.jpg',
+        link: 'https://www.bms.com/',
+        description:
+          'A global biopharmaceutical company dedicated to discovering, developing, and delivering innovative medicines for serious diseases.',
+      },
+      {
         name: 'Bayer',
         logo: '/images/sponsors/bayer.png',
         link: 'https://www.bayer.com',
         description: 'Science for a better life with focus on health and nutrition.',
       },
-      {
-        name: 'Bristol Myers Squibb',
-        logo: '/images/sponsors/bristol-myers-squibb.png',
-        link: 'https://www.bms.com/',
-        description:
-          'A global biopharmaceutical company dedicated to discovering, developing, and delivering innovative medicines for serious diseases.',
-      },
-
       {
         name: 'MERCK',
         logo: '/images/sponsors/MERCK.jpg',
@@ -123,7 +122,7 @@ export const SPONSORS: SponsorsProps[] = [
       },
       {
         name: 'IPSEN',
-        logo: '/images/sponsors/ipsen.png',
+        logo: '/images/sponsors/Ipsen.svg',
         link: 'https://www.ipsen.com/',
         description:
           'A global biopharmaceutical group focused on transformative medicines in oncology, neuroscience, and rare diseases.',
